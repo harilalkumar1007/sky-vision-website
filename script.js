@@ -25,3 +25,10 @@ setInterval(() => {
   current = (current + 1) % texts.length;
   document.getElementById("heading").innerHTML = texts[current];
 }, 3000);
+function openMenu(){
+    document.getElementById("sidebar").classList.add("active");
+}
+
+function closeMenu(){
+    document.getElementById("sidebar").classList.remove("active");
+}

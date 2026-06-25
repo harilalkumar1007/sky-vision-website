@@ -63,7 +63,7 @@ option{
 .menu{
     display:flex;
     list-style:none;
-    gap:35px;
+    gap:30px;
 }
 
 .menu li{
@@ -75,7 +75,7 @@ option{
 .right-menu{
     display:flex;
     align-items:center;
-    gap:25px;
+    gap:15px;
 }
 
 .right-menu i{
@@ -156,7 +156,7 @@ option{
 .hero{
     position:relative;
     height:85vh;
-    background-image:url("image/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+    background-image:url("image/event meeting.jpg");
     background-size:cover;
     background-repeat:no-repeat
 }
@@ -262,7 +262,7 @@ option{
     align-items:center;
     gap:60px;
 
-    background-image:url("image/image backgaround.jpg");
+    background-image:url("image/event image.webp");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -270,7 +270,7 @@ option{
     position:relative;
 }
 .about p{
-    color:rgb(171, 213, 16) !important;
+    color:rgb(240, 241, 237) !important;
 }
 .about-left,
 .about-right{
@@ -280,7 +280,7 @@ option{
 .about-left img{
     width:100%;
     border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    box-shadow:0 10px 30px rgba(24, 201, 77, 0.15);
 }
 
 .about-tag{
@@ -292,11 +292,11 @@ option{
 .about-right h2{
     font-size:45px;
     margin:15px 0;
-    color:#111;
+    color:#f8f2f2;
 }
 
 .about-right p{
-    color:#666;
+    color:#c14444;
     line-height:1.8;
     margin-bottom:15px;
 }
@@ -363,7 +363,7 @@ html{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    background-image:url("image/annie-spratt-QckxruozjRg-unsplash.jpg");
+    background-image:url("image/event meeting.jpg");
 
     padding:10px 8px;
     gap:80px;
@@ -1007,4 +1007,73 @@ html{
     .form-row{
         flex-direction:column;
     }
+}
+.sidebar{
+    position:fixed;
+    top:0;
+    right:-600px;
+    width:350px;
+    height:100vh;
+    background:white;
+    padding:20px;
+
+    overflow-y:auto;
+    gap:20px;
+    transition:0.s;
+    z-index:01;
+}
+
+.sidebar.active{
+    right:0;
+}
+
+.close-btn{
+    position:absolute;
+    top:20px;
+    right:20px;
+
+    width:30px;
+    height:30px;
+
+    background:#2563eb;
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+    cursor:pointer;
+}
+.sidebar-logo{
+    width:300px;
+    height:auto;
+}
+.sidebar-social{
+    display:flex;
+    gap:25px;
+    margin-top:25px;
+}
+
+.sidebar-social a{
+    width:50px;
+    height:50px;
+    background:#2563eb;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+    text-decoration:none;
+    font-size:20px;
+
+    transition:0.3s;
+}
+
+.sidebar-social a:hover{
+    transform:translateY(-5px);
 }
